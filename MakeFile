@@ -5,7 +5,7 @@ install: ## Install Python requirements.
 
 
 .PHONY: drive
-run: ## Run the project.
+drive: ## MountDrive
 	from google.colab import drive
 	drive.mount('/content/gdrive')
 
