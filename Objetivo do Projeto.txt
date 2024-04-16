@@ -1,0 +1,4 @@
+O objetivo do projeto é desenvolver uma rede neural através da ferramenta YOLO que seja capaz de identificar se uma pessoa, homem ou mulher, está interagindo com uma cerveja. Como exemplos práticos da aplicação, podemos considerar controle de estoque de bares e como uma visão mais ampla, a verificação de pessoas consumindo cerveja em um ambiente aberto e volumoso, como o feriado do Carnaval.
+
+A construção do projeto partiu do conceito de utilizar um modelo existente do YOLO para treinar um novo modelo de IA, modelo este conhecido como Transfer Learing. Nesse processo, os novos modelos usam essencialmente versões pré-treinadas como um modelo. Eles aprendem com um conjunto de dados que um algoritmo separado já interpretou, o que acelera significativamente todo o processo.
+
