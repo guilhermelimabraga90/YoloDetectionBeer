@@ -34,7 +34,7 @@ def importModel():
     
     imagestest = glob.glob("/content/gdrive/MyDrive/TrainingYolo/testImages/*.jpg")
     results = []
-    model = YOLO('/content/gdrive/MyDrive/TrainingYolo/runs/detect/train14/weights/best.pt')
+    model = YOLO('/content/YoloDetectionBeer/src/weights/best.pt')
 
     for image in imagestest:
         results.append(model(source=image, save=True))
