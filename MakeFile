@@ -1,16 +1,11 @@
 .PHONY: install
 install: ## Install Python requirements.
-	!python3 -m pip install --upgrade pip setuptools wheel poetry
-	!python3 -m pip install ultralytics
+	python -m pip install --upgrade pip setuptools wheel poetry
+	python -m pip install ultralytics
 
-
-.PHONY: drive
-drive: ## MountDrive
-	from google.colab import drive
-	drive.mount('/content/gdrive')
 
 
 .PHONY: run
 run: ## Run the project.
-	!python3 ./src/app/__main__.py
+	python ./src/app/__main__.py
 
