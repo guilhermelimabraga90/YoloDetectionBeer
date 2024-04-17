@@ -32,18 +32,19 @@ def overlap(r1, r2):
 
 def importModel():
     
-    imagestest = glob.glob("/content/gdrive/MyDrive/TrainingYolo/testImages/*.jpg")
+    imagestest = glob.glob("/content/YoloDetectionBeer/src/images/testImages/*.jpg")
     results = []
     model = YOLO('/content/YoloDetectionBeer/src/weights/best.pt')
 
     for image in imagestest:
+        print("test")
         results.append(model(source=image, save=True))
     return results
 
 def interection(results):
     
     for i in range(len(results)):
-        img = mpimg.imread('/content/runs/detect/predict1/image' + str(i+1)+ ".jpg") #Replace "image.jpg" with the path of your image
+        img = mpimg.imread('/content/YoloDetectionBeer/runs/detect/predict/image' + str(i+1)+ ".jpg") #Replace "image.jpg" with the path of your image
         plt.imshow(img)
         plt.axis('off')
         plt.show()
@@ -66,10 +67,9 @@ def interection(results):
 
 
 def main():
-    results = importModel
+    results = importModel()
     interection(results)
     
-
 
 if __name__ == '__main__':
     main()
