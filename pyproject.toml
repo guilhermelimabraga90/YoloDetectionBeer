@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "beardetection"
+version = "0.1.0"
+description = "Detec if a man or a woman is interacting with a bear"
+authors = ["Guilherme Lima Braga <guilhermelimabraga90@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

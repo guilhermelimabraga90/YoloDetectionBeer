@@ -1,0 +1,10 @@
+# Yolo Detecion Bear
+```bash
+make install
+```
+Ira instalar o componentes necessarios para rodar o código
+
+```bash
+make run
+```
+Ira  rodar o código
