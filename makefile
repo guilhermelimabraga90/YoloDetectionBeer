@@ -1,7 +1,7 @@
 .PHONY: install
 install: ## Install Python requirements.
 	pip install  poetry
-	poetry locks
+	poetry lock
 	poetry install --no-root
 
 
