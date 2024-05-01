@@ -1,5 +1,4 @@
 import glob
-import cv2
 from ultralytics import YOLO
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
@@ -32,9 +31,9 @@ def overlap(r1, r2):
 
 def importModel():
     
-    imagestest = glob.glob("/content/YoloDetectionBeer/src/images/testImages/*.jpg")
+    imagestest = glob.glob("src/images/testImages/*.jpg")
     results = []
-    model = YOLO('/content/YoloDetectionBeer/src/weights/best.pt')
+    model = YOLO('src/weights/best.pt')
 
     for image in imagestest:
         print("test")
@@ -44,7 +43,7 @@ def importModel():
 def interection(results):
     
     for i in range(len(results)):
-        img = mpimg.imread('/content/YoloDetectionBeer/runs/detect/predict/image' + str(i+1)+ ".jpg") #Replace "image.jpg" with the path of your image
+        img = mpimg.imread('runs/detect/predict/image' + str(i+1)+ ".jpg") #Replace "image.jpg" with the path of your image
         plt.imshow(img)
         plt.axis('off')
         plt.show()
